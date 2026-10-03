@@ -1,0 +1,73 @@
+# ==============================================================================
+# Environment Variables & Secrets
+# Protect sensitive API keys (OpenAI, Anthropic) and configuration files
+# ==============================================================================
+.env
+.env.*
+!.env.example
+secrets.toml
+*.pem
+*.key
+
+# ==============================================================================
+# Virtual Environments
+# Exclude isolated Python virtual environment dependencies
+# ==============================================================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================================================================
+# Python Bytecode & Cache
+# Compiled bytecode, test runners, and linter caches
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ==============================================================================
+# Temporary & Media Artifacts (yt-dlp, edge-tts, faster-whisper)
+# Avoid committing raw audio/video dumps and downloaded models
+# ==============================================================================
+# Audio and Video files
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.mp4
+*.mkv
+*.webm
+*.part
+*.ytdl
+
+# HuggingFace & Faster-Whisper local model caches
+models/
+.cache/
+whisper-models/
+
+# ==============================================================================
+# Logs & Databases
+# Local development logs and SQLite database instances
+# ==============================================================================
+*.log
+*.sqlite3
+*.db
+
+# ==============================================================================
+# IDE & OS Artifacts
+# Editor configurations and operating system metadata
+# ==============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
