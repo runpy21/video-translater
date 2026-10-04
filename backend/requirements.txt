@@ -7,3 +7,7 @@ edge-tts>=6.1.0
 anthropic>=0.25.0
 openai>=1.0.0
 pydantic-settings>=2.0.0
+transformers>=4.40.0
+sentencepiece>=0.1.99
+torch
+demucs>=4.0.0
