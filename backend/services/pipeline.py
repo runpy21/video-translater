@@ -72,7 +72,7 @@ class TranslationPipeline:
                     audio_segments.append((seg.start, seg.end, seg_audio))
 
                     pct = 0.48 + 0.30 * ((i + 1) / len(segments))
-                    progress(pct, f"🔊 Segment {i + 1}/{len(segments)}...")
+                    progress(pct, f"Segment {i + 1}/{len(segments)}...")
 
                 progress(0.82, "Synchronization by timestamps...")
                 voice_sync = os.path.join(tmp, "voice_sync.mp3")

@@ -11,7 +11,7 @@ export default function App() {
       <header className="header">
         <div>
           <h1>Translate video</h1>
-          <p>YouTube · Instagram and 1000+ websites</p>
+          <p>supported platforms youtube.com, youtu.be, vimeo.com, tiktok.com, instagram.com</p>
         </div>
       </header>
 
